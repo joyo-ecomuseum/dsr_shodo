@@ -41,6 +41,23 @@
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
       cursor: pointer;
     }
+   
+.ar-button::before {
+     content: "ここをタップして\A正道官衙遺跡で働く役人を撮影しよう！\A撮影した写真を保存しよう！";
+     position: absolute;
+     bottom: calc(100% + 20px);
+     left: 50%;
+     transform: translateX(-50%);
+     width: 85vw;
+     max-width: 420px;
+     color: white;
+     font-size: 18px;
+     font-weight: 600;
+     line-height: 1.6;
+     text-align: center;
+     white-space: pre-line;
+     pointer-events: none;
+   }
 
     .ar-button:active {
       transform: translate(-50%, -50%) scale(0.97);
@@ -63,7 +80,7 @@
     environment-image="neutral">
 
     <button slot="ar-button" class="ar-button" type="button">
-      ここをタップして<br>正道官衙遺跡で働く<br>役人を撮影しよう！<br>撮影した写真を保存しよう！
+      ARを起動
     </button>
 
   </model-viewer>
